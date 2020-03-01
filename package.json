@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "start-endpoints-server": "cd endpoints && nodemon app.js",
+        "start-monitoring-server": "cd monitoring && nodemon app.js",
+        "all": "npm-run-all --parallel start-endpoints-server start-monitoring-server"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    }
+}
